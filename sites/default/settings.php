@@ -225,14 +225,14 @@
  *
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'drupal_alqueria_site',
       'username' => 'root',
       'password' => 'mysql',
-      'host' => '192.168.0.152',
+      'host' => '192.168.0.101',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
