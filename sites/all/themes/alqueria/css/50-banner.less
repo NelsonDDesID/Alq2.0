@@ -1,0 +1,102 @@
+.bannerNotFront,
+body.not-front>.banner {
+	.content {
+		.banner {
+			position: relative;
+
+			.logo {
+				overflow: hidden;
+				position: relative;
+				height: 390px;
+				img {
+					min-height: 390px !important;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					z-index: 10;
+					.translateXY(-50%, -50%);
+				}
+				@media only screen and (max-width: @responsive-w-320) {
+					height: 248px;
+					img {
+						min-height: 248px !important;
+					}
+				}
+			}
+
+			.text {
+				width: 98%;
+				max-width: 1200px;
+				margin: 0 auto;
+
+				position: relative;
+
+				h2 {
+					position: absolute;
+					top: -320px;
+					left: 5px;
+					width: 50%;
+					z-index: 30;
+
+					font-family: @font-primary;
+					font-size: 45px;
+					line-height: 50px;
+					color: #515654;
+					font-weight: 300;
+
+					@media only screen and (max-width : @responsive-w-800) {
+						top: -280px;
+						width: 70%;
+					}
+					@media only screen and (max-width : @responsive-w-600) {
+						top: -280px;
+						width: 100%;
+						text-align: center;
+
+						font-size: 35px;
+						line-height: 40px;
+
+						b, strong {
+							line-height: 40px;
+						}
+
+					}
+					@media only screen and (max-width : @responsive-w-480) {
+						top: -280px;
+
+						font-size: 25px;
+						line-height: 30px;
+
+						b, strong {
+							line-height: 30px;
+						}
+
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: @responsive-w-320) {
+			display: none;
+		}
+	}
+}
+body.not-front.node-type-webform>.banner {
+	.bannerNotFront();
+	.content {
+		.banner {
+			.logo {
+				height: 213px;
+				img {
+					min-height: 213px !important;
+				}
+				@media only screen and (max-width: @responsive-w-320) {
+					height: 248px;
+					img {
+						min-height: 248px !important;
+					}
+				}
+			}
+		}
+	}
+}
+

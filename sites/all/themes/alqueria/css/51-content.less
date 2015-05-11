@@ -1,0 +1,77 @@
+body>.content {
+	padding-top: 60px;
+	.top #block-menu-menu-categoria {
+		display: none;
+	}
+	.middle {
+		.landing {
+			.container {
+				float: left;
+				position: relative;
+				border: 4px solid #f1f1f1;
+				width: 25%;
+				min-width: 142px;
+
+				h1 {
+					.opacity(0);
+					padding: 0;
+					margin: 0;
+					height: 0;
+					overflow: hidden;
+				}
+				span {
+					display: none;
+				}
+				img {
+					width: 100% !important;
+					height: auto !important;
+				}
+				.over {
+					position: absolute;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: auto;
+					cursor: pointer;
+
+					.icon {
+						position: absolute;
+						left: 0;
+						top: 0;
+						right: 0;
+						bottom: 0;
+					}
+				}
+				&.grasa .icon {
+					background: transparent url("../img/icon-grasa.png") no-repeat center center;
+				}
+				&.semidescremada .icon {
+					background: transparent url("../img/icon-descremada.png") no-repeat center center;
+				}
+				&.digestive .icon {
+					background: transparent url("../img/icon-digestive.png") no-repeat center center;
+				}
+
+				@media only screen and (max-width : @responsive-w-768) {
+					width: 50%;
+				}
+
+				@media only screen and (max-width : @responsive-w-375) {
+					width: 100%;
+				}
+
+			}
+		}
+		.block.block-system {
+			clear: both;
+			#first-time {
+				display: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width : @responsive-w-800) {
+		padding-top: 10px;
+		margin: 0 10px;
+	}
+}

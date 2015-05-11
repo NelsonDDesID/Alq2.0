@@ -1,0 +1,156 @@
+.views-slideshow-cycle-main-frame-row-item {
+	.views-field {
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		&.views-field-field-description, &.views-field-field-url {
+			width: 98%;
+			max-width: 1200px;
+			margin: 0 auto;
+
+			position: relative;
+
+			.field-content {
+				position: absolute;
+				top: 120px;
+				left: 5px;
+				width: 60%;
+				z-index: 30;
+
+				font-family: @font-primary;
+				font-size: 44px;
+				line-height: 50px;
+				color: #515654;
+				font-weight: 300;
+
+				b, strong {
+					line-height: 80px;
+					font-size: 44px;
+					font-weight: 400;
+				}
+
+				@media only screen and (max-width : @responsive-w-800) {
+					top: 80px;
+					width: 80%;
+				}
+				@media only screen and (max-width : @responsive-w-600) {
+					top: 40px;
+					width: 96%;
+					text-align: center;
+
+					font-size: 35px;
+					line-height: 40px;
+
+					b, strong {
+						line-height: 40px;
+					}
+
+				}
+				@media only screen and (max-width : @responsive-w-480) {
+					top: 40px;
+
+					font-size: 25px;
+					line-height: 30px;
+
+					b, strong {
+						line-height: 30px;
+					}
+
+				}
+			}
+			@media only screen and (max-width : @responsive-w-768) {
+				width: 100%;
+			}
+		}
+		&.views-field-field-url {
+			&:empty {
+				display: none;
+			}
+
+			.field-content {
+				top: -80px;
+
+				&:empty {
+					display: none;
+				}
+
+				a,
+				a:visited {
+					display: none;
+					font-size: 26px;
+					color: #FFF;
+					background: transparent url("../img/button-back.png") repeat left top;
+					.border-radius(4px);
+					padding: 5px 30px;
+					text-decoration: none;
+
+					&:empty {
+						display: none;
+					}
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		&.views-field-field-image-mobile,
+		&.views-field-field-image {
+			.field-content {
+				overflow:hidden;
+				position: relative;
+				height: 390px;
+				img {
+					min-height: 390px !important;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					z-index: 10;
+					.translateXY(-50%,-50%);
+					@media only screen and (max-width : @responsive-w-480) {
+						min-height: 248px !important;
+						width: 100% !important;
+						height: auto !important;
+					}
+				}
+				@media only screen and (max-width : @responsive-w-480) {
+					height: 248px;
+				}
+			}
+			@media only screen and (max-width : @responsive-w-480) {
+				display: none;
+			}
+		}
+		&.views-field-field-image-logo {
+			.field-content {
+				width: 98%;
+				max-width: 1200px;
+				margin: 0 auto;
+
+				position: relative;
+				img {
+					top: 0;
+					right: 0;
+					.translateXY(0%,-100%);
+					z-index: 15;
+					position: absolute;
+				}
+				@media only screen and (max-width : @responsive-w-800) {
+					display: none;
+				}
+			}
+		}
+		&.views-field-field-image-mobile {
+			display: none;
+			@media only screen and (max-width : @responsive-w-480) {
+				display: block;
+			}
+		}
+	}
+}
+.views-slideshow-controls-bottom {
+	display: none;
+}

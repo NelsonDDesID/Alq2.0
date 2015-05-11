@@ -1,0 +1,53 @@
+; Theme Info -----------------------------------------------------------------
+; required information about the theme
+
+name = ID-Interactive
+description = "Sitio Web 2015 para Alqueria Creado por Imagen Digital."
+core = 7.x
+engine = phptemplate
+; base theme = seed
+
+; Stylesheets  ---------------------------------------------------------------
+; We use [screen] instead of [all] to avoid browser styles affecting
+; other media types. IE stylesheets are loaded through template.php
+
+stylesheets[all][] 			= css/normalize.css
+; stylesheets[all][] 			= css/main.css
+
+; Scripts --------------------------------------------------------------------
+; Some basic JS files are loaded here.
+
+
+scripts[] 					= js/vendor/modernizr-2.8.3.min.js
+scripts[]					= js/main.js
+
+; Regions --------------------------------------------------------------------
+; these content regions are available for block placement
+; some are special hidden regions: page_top, page_bottom, and help
+
+regions[help]              		= Help
+regions[page_top]          		= Page Top
+
+regions[header_first]      		= Header First
+regions[header_second]     		= Header Second
+regions[header_third]      		= Header Third
+regions[banner]		      		= Banner
+
+regions[pre_content]       		= Pre Content
+regions[content]           		= Content
+regions[post_content]      		= Post Content
+
+regions[footer_first]      		= Footer First
+regions[footer_second]     		= Footer Second
+regions[footer_third]      		= Footer Third
+
+regions[page_bottom]       		= Page Bottom
+
+; Options --------------------------------------------------------------------
+; these are the checkboxes that are available on the theme settings page.
+
+; these are the stock options
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = favicon
