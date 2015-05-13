@@ -1,28 +1,32 @@
-body {
+body.map-alqueria{
 	#map-canvas {
 		height: 100%;
         margin: 0px;
         padding: 0px;
 	}
+	
 	#results {
-	    font-family: Arial, Helvetica, sans-serif;
 	    position: absolute;
 	    right: 5px;
 	    top: 50%;
 	    margin-top: -195px;
-	    height: 380px;
-	    width: 200px;
+	    height: 250px;
+	    width: 400px;
 	    padding: 5px;
 	    z-index: 5;
 	    border: 1px solid #999;
 	    background: #fff;
 	}
-
-	h2 {
-	font-size: 22px;
-	margin: 0 0 5px 0;
+	#results .title {
+	  background-color: #8fc9f1;
 	}
-	ul {
+
+	#results h2 {
+		margin: 0;
+		color: #fff;
+	  	font-size: 19px;
+	}
+	#results  ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -30,18 +34,24 @@ body {
 	width: 200px;
 	overflow-y: scroll;
 	}
-	li {
+	#results  li {
 	background-color: #f1f1f1;
 	padding: 10px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	}
-	li:nth-child(odd) {
+	#results  li:nth-child(odd) {
 	background-color: #fcfcfc;
 	}
 	#more {
 	width: 100%;
 	margin: 5px 0 0 0;
+	}
+}
+
+body.not-front.page-node-36{
+	#node-36 .content .field-items p{
+		height: 600px;
 	}
 }

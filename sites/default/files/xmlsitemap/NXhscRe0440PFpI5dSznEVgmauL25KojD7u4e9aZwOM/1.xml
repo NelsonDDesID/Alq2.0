@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url><loc>http://local.alqueria.co/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://local.alqueria.co/habeas-data</loc><lastmod>2015-05-04T14:34Z</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>http://local.alqueria.co/registrate</loc><lastmod>2015-05-06T20:54Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>http://local.alqueria.co/registro</loc><lastmod>2015-05-12T22:10Z</lastmod><changefreq>daily</changefreq></url>
 <url><loc>http://local.alqueria.co/nuestras-leches</loc><lastmod>2015-05-11T22:11Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://local.alqueria.co/pol%C3%ADticas-de-privacidad</loc><lastmod>2015-05-07T16:13Z</lastmod><changefreq>weekly</changefreq></url>
 </urlset>

@@ -63,13 +63,7 @@ var mapOptions = {
   center: centerLatLng,
   styles: styleMap         
 };
-
-//Service Options
-var request = {
-    location: centerLatLng,
-    radius: 500,
-    types: ['store']
-  };				
+				
 
 //Icons GPS
 var imageGPS		= 'sites/all/themes/alqueria/img/icon-gps.png';
