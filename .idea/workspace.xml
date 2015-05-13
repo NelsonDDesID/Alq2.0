@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36774c8d-1245-457b-9f0d-c59f666554bb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/img/logo-b.png" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/img/logo-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-banner.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-banner.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-product.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-product.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.css" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Alq2.0.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,17 +36,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28848484">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="51-registro.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7964861">
+              <caret line="47" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="40-body.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/40-body.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="50-header.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="43.153847">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="51-content.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="27.346153">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="51-product.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-product.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.923077">
+              <caret line="243" column="33" selection-start-line="241" selection-start-column="32" selection-end-line="243" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="50-banner.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-banner.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="51-content-milks.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="50-slideshow.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.961538">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +143,11 @@
       <list>
         <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-page-map.less" />
         <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.less" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-product.less" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-banner.less" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less" />
       </list>
     </option>
   </component>
@@ -56,6 +157,9 @@
   </component>
   <component name="NamedScopeManager">
     <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -248,6 +352,40 @@
               <option name="myItemId" value="all" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alqueria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main.less" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alq2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alq2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -257,9 +395,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev/sites/all/themes/alqueria/css/51-content-milks.less" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../dev/sites/all/themes/alqueria/css/51-content-milks.less" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -311,18 +451,26 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16154721" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2480091" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -340,10 +488,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/10-base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28848484">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-banner.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="43.153847">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.346153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/40-body.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-page-text.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-product.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.923077">
+          <caret line="243" column="33" selection-start-line="241" selection-start-column="32" selection-end-line="243" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7964861">
+          <caret line="47" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
