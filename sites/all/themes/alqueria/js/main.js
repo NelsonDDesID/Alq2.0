@@ -250,6 +250,29 @@
 			ga('send', 'event','Productos', 'Select_product', $itemValue);
 		});
 
+		//Social Network
+		$('.social.networks a').click(function(event) {
+			var $a = $(this);
+
+			var name = $a.attr('data-postname');
+			var red = '';
+
+			if( $a.hasClass('btn-facebook') )
+				red = 'Facebook';
+			else if( $a.hasClass('btn-twitter') )
+				red = 'Twitter';
+			else if( $a.hasClass('btn-gplus') )
+				red = 'Google+';
+			else if( $a.hasClass('btn-email') )
+				red = 'E-mail';
+			else if( $a.hasClass('btn-whatsapp') )
+				red = 'Whatsapp';
+			else
+				red = 'None';
+
+			ga('send', 'event','Compartir', name , red);
+		});
+
 	})();
 
 	// Tips Over
@@ -299,6 +322,43 @@
 			});
 		}
 
+	})();
+
+	// Registro
+	(function(){
+		if($('form.webform-client-form').length > 0) {
+			var $radios = $('form.webform-client-form input[type="radio"]');
+			$radios.each(function(index, radio){
+				var $radio = $(radio);
+				$radio.addClass('js').css({
+					opacity: 0.01,
+					position: 'absolute'
+				});
+
+				var $newRadio = $('<div/>');
+
+				$newRadio.addClass('input-radio');
+				$newRadio.data('radio',$radio);
+				$radio.data('radio',$newRadio);
+
+				$radio.change(function(){
+					$radios.each(function(index2, radio2) {
+						$(radio2).data('radio').toggleClass('checked', !!$(radio2).prop('checked'));
+					});
+				});
+
+				$newRadio.click(function(){
+					$radios.removeProp('checked');
+					$radio.prop('checked', true);
+					$radios.each(function(index2, radio2) {
+						$(radio2).data('radio').toggleClass('checked', !!$(radio2).prop('checked'));
+					});
+				});
+
+				$radio.after($newRadio);
+				$newRadio.toggleClass('checked', !!$(radio).attr('checked'));
+			});
+		}
 	})();
 });
 

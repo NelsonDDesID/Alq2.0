@@ -127,6 +127,18 @@ body.node-type-webform {
 				border-left: none;
 			}
 		}
+		.input-radio {
+			display: inline-block;
+			background: transparent url("../img/check-off.png") no-repeat center center;
+			height: 41px;
+			width: 41px;
+			line-height: inherit;
+			vertical-align: middle;
+			cursor: pointer;
+			&.checked {
+				background: transparent url("../img/check-on.png") no-repeat center center;
+			}
+		}
 
 		&.webform-component--date-birthday {
 			select.month {
