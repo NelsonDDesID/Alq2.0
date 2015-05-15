@@ -1,52 +1,186 @@
-body.map-alqueria{
+body.map-alqueria {
 	#map-canvas {
 		height: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
 	}
 	
 	#results {
-	    position: absolute;
-	    right: 5px;
-	    top: 50%;
-	    margin-top: -195px;
-	    height: 250px;
-	    width: 400px;
-	    padding: 5px;
-	    z-index: 5;
-	    border: 1px solid #999;
-	    background: #fff;
-	}
-	#results .title {
-	  background-color: #8fc9f1;
+		position: absolute;
+		left: 400px;
+		top: 150px;
+		width: 850px;
+		padding: 0;
+		z-index: 5;
+		border: 1px solid #9fcfef;
+		background: #f2f2f2;
+		.left {
+			float: left;
+			width: 280px;
+
+			font-family: @font-secondary;
+			color: #515654;
+			font-size: 18px;
+
+			.text {
+				margin: 30px 44px 20px 44px;
+
+				b {
+					color: #93cbf1;
+					font-weight: 600;
+				}
+			}
+			.list {
+				margin: 0 44px 30px 44px;
+				h3 {
+					img {
+						margin-right: 5px;
+					}
+					font-family: @font-primary;
+					color: #515654;
+					font-size: 19px;
+
+					margin: 15px 0;
+					font-weight: 300;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.right {
+			float: right;
+			width: 565px;
+			border-left: 1px solid #9fcfef;
+			.title {
+				padding: 5px 40px;
+				background: #8fc9f1 url("../img/map-title-back.png") no-repeat 5px center;
+				cursor: pointer;
+			}
+			h2 {
+				font-family: @font-primary;
+				margin: 0;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 300;
+			}
+			#places {
+				margin: 20px;
+				height: 250px;
+				overflow: auto;
+
+				h3 {
+					font-family: @font-primary;
+					color: #515654;
+					font-size: 19px;
+
+					margin: 0;
+					font-weight: 300;
+					text-transform: uppercase;
+
+					img {
+						margin-right: 5px;
+					}
+				}
+				&>div {
+					padding-bottom: 10px;
+					.place {
+						cursor: pointer;
+						margin-left: 40px;
+						padding-left: 20px;
+						font-family: @font-secondary;
+						color: #515654;
+						font-size: 14px;
+						font-weight: 300;
+						overflow: hidden;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
 	}
 
-	#results h2 {
-		margin: 0;
-		color: #fff;
-	  	font-size: 19px;
-	}
-	#results  ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	height: 321px;
-	width: 200px;
-	overflow-y: scroll;
-	}
-	#results  li {
-	background-color: #f1f1f1;
-	padding: 10px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-	#results  li:nth-child(odd) {
-	background-color: #fcfcfc;
-	}
 	#more {
-	width: 100%;
-	margin: 5px 0 0 0;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+
+	.content-marker {
+		.content-title {
+			font-family: @font-primary;
+			font-size: 23px;
+			font-weight: 300;
+
+			margin: 0;
+			padding: 5px 0;
+		}
+		.content-body {
+			padding-bottom: 30px;
+			.left {
+				width: 300px;
+				float: left;
+				h4 {
+					font-family: @font-primary;
+					font-size: 19px;
+					font-weight: 300;
+
+					margin: 0;
+				}
+				p {
+					margin: 0;
+				}
+				.social-networks {
+					padding: 10px 0;
+					text-align: left;
+					a {
+						margin: 0 10px 0 0;
+					}
+					.mobile {
+						display: none;
+					}
+					@media only screen and (max-width: @responsive-w-800) {
+						a {
+							display: none;
+							&.both,
+							&.mobile {
+								display: inline;
+							}
+						}
+					}
+				}
+			}
+			.right {
+				width: 200px;
+				float: left;
+				margin-left: 50px;
+
+				font-family: @font-secondary;
+				font-size: 17px;
+				line-height: 19px;
+				font-weight: 300;
+
+				&>div {
+					padding: 10px 0 5px 40px;
+					margin: 5px 0;
+					height: 38px;
+
+					&.location {
+						background: transparent url("../img/icon-gps.png") no-repeat left 10px;
+						height: 46px;
+					}
+					&.cost {
+						background: transparent url("../img/icon-cost.png") no-repeat left 10px;
+					}
+					&.date {
+						background: transparent url("../img/icon-date.png") no-repeat left 10px;
+					}
+					&.times {
+						background: transparent url("../img/icon-time.png") no-repeat left 10px;
+					}
+
+				}
+			}
+		}
 	}
 }
 

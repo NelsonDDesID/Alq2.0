@@ -1,38 +1,31 @@
-
 <!DOCTYPE html>
-<html style="height: 100%;margin: 0px;padding: 0px;">
+<html style="height:100%;margin:0;padding:0;">
   <head>
-    <title>Place details</title>
+    <title>Ubicaciones</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="sites/all/themes/alqueria/css/main.css" />
+    <script src="sites/all/themes/alqueria/js/vendor/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="configMap.js"></script>
-    <script>
-      function initialize() {
-        placesList      = document.getElementById('places');
-        map             = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var infowindow  = new google.maps.InfoWindow();
-        for(var index in points) { 
-          var point     = points[index];
-          var marker    = new google.maps.Marker({position: point.latlog,map: map,icon: point.icon,title: point.title});
-          google.maps.event.addListener(marker, 'click', (function(marker,point) {
-              return function() {
-                  infowindow.setContent('<div id="content"><div id="title-'+point.category+'"><img src="'+point.icon+'" >'+point.title+'</div><div id="bodyContent"><div id="left"><p>'+point.content+'</p><div class="social-networks"></div></div><div id="right"><div id="location"><img src="'+imageGPS+'" >'+point.town+' '+point.address+'</div><div id="cost"><img src="'+imageCost+'" >'+point.cost+'</div><div id="date"><img src="'+imageDate+'" >'+point.date+'</div><div id="times"><img src="'+imageTime+'" >'+point.times+'</div></div></div></div>');
-                  infowindow.open(map, marker);
-              };
-          })(marker, point));
-          placesList.innerHTML += '<li>' + point.title + '</li>';
-        }
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
   </head>
-  <body class="map-alqueria" style="height: 100%;margin: 0px;padding: 0px;"> 
+  <body class="map-alqueria" style="height:100%;margin:0;padding:0;">
     <div id="map-canvas"></div>
     <div id="results">
-      <div class="title"><h2>TODOS LOS EVENTOS</h2></div>
-      <ul id="places"></ul>
+      <div class="left">
+        <div class="text">
+          Encuentra la información de eventos saludables cerca a ti en nuestro
+          <b>Mapa Saludable.</b>
+        </div>
+        <div class="list">
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="title"><h2>TODOS LOS EVENTOS</h2></div>
+        <div id="places"></div>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </body>
 </html>
