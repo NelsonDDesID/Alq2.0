@@ -327,6 +327,7 @@
 	// Registro
 	(function(){
 		if($('form.webform-client-form').length > 0) {
+
 			var $radios = $('form.webform-client-form input[type="radio"]');
 			$radios.each(function(index, radio){
 				var $radio = $(radio);
@@ -358,6 +359,26 @@
 				$radio.after($newRadio);
 				$newRadio.toggleClass('checked', !!$(radio).attr('checked'));
 			});
+
+			var errorMessage = $('.messages.error');
+			if( errorMessage.length > 0 ) {
+
+				$('body').css({
+					overflow: 'hidden'
+				});
+
+				var message = errorMessage.parent();
+				message.addClass('overlay');
+
+				errorMessage.append('<div class="btn">ACEPTAR</div>');
+
+				message.click(function(){
+					message.hide();
+					$('body').css({
+						overflow: 'auto'
+					});
+				});
+			}
 		}
 	})();
 });

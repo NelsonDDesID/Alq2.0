@@ -79,6 +79,18 @@ var mapOptions = {
 var places = [
 	{
 		category: health,
+		title: 'Rompemontañas Prueba',
+		subtitle: 'Rompemontañas Monserrate',
+		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta diam interdum erat bibendum aliquet.Morbi eget augue dolor. Nulla id luctus ante, non aliquet lorem. Maecenas accumsan urna arcu, rutrum semper ex placerat et. Maecenas magna justo, blandit vitae congue in, eleifend a eros.',
+		town: 'Bogotá',
+		address: 'Avenida Circunvalar',
+		cost: '10.000 - 30.000',
+		date: 'Mayo 09/2015',
+		times: '9.00 am - 7.00 pm',
+		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+	},
+	{
+		category: health,
 		title: 'Rompemontañas Monserrate',
 		subtitle: 'Rompemontañas Monserrate',
 		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta diam interdum erat bibendum aliquet.Morbi eget augue dolor. Nulla id luctus ante, non aliquet lorem. Maecenas accumsan urna arcu, rutrum semper ex placerat et. Maecenas magna justo, blandit vitae congue in, eleifend a eros.',
