@@ -81,7 +81,6 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
 <?php
   /** Modificado por camilo.rincon@imagendigital.co **/
   $result           = null;
@@ -93,12 +92,15 @@
   $taxonomyTermName = $result['#object']->field_tags['und'][0]['taxonomy_term']->name;
   
   if(!empty($taxonomyTermName)){
-    print '<div class"category"><h2>'.$taxonomyTermName.'</h2></div>';
+    print '<div class="category ' . $taxonomyTermName . '"><h2>' .
+          ( $taxonomyTermName == 'Entera' ? 'Salud' : ( $taxonomyTermName == 'semidescremada' ? 'Vida Saludable' : 'Alimentaci&oacute;n' ) ) .
+          '</h2></div>';
   }
 
   if($node->type==='article'){
     print '<h3>'.$title.'</h3>';
   }
+
 ?>
 <div class="banner-article">
 <?php
@@ -149,17 +151,20 @@
         break;
     }
 
-    print '<div class"date">'.$monthTxt.' '.date("d/Y", $result['#object']->created).'</div>';
+    print '<div class="date ' . $taxonomyTermName . '">'.$monthTxt.' '.date("d/Y", $result['#object']->created).'</div>';
   }
-
-  
-  echo '<pre>';
-  //var_dump($result['#object']);
-  echo '</pre>';
 ?>
 </div>
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="share">COMPARTIR<div class="fb"></div><div class="tw"></div><div class="gp"></div><div class="em"></div><div class="wa"></div></div>
+    <div class="share">
+      COMP&Aacute;RTELO
+      <a href="https://www.facebook.com/dialog/feed?app_id=149377435120323&amp;display=popup&amp;redirect_uri=[base_url][path]&amp;link=[base_url][path]&amp;caption=[title]&amp;picture=[php_1]" class="btn-facebook" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-fb.png" /></a>
+      <a href="http://m.facebook.com/dialog/feed?app_id=149377435120323&amp;display=touch&amp;redirect_uri=[base_url][path]&amp;link=[base_url][path]&amp;picture=[php_1]" class="btn-facebook mobile" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-fb.png" /></a>
+      <a href="https://twitter.com/intent/tweet?url=[base_url][path]&amp;text=[title]&amp;via=LecheAlqueria" class="btn-twitter both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-tw.png" /></a>
+      <a href="https://plus.google.com/share?url=[base_url][path]" class="btn-gplus both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-gp.png" /></a>
+      <a href="mailto:?subject=[title]&amp;body=[base_url][path]" class="btn-email both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-em.png" /></a>
+      <a href="whatsapp://send?text=[base_url][path]" class="btn-whatsapp mobile" data-postname="[title]"  data-action="share/whatsapp/share"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-wa.png" /></a>
+    </div>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);

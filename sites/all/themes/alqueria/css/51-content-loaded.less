@@ -1,0 +1,84 @@
+#cboxLoadedContent {
+	.node {
+		font-family: @font-secondary;
+		font-size: 16px;
+		font-weight: 300;
+		color: #515654;
+		padding: 40px 60px;
+
+		.category {
+
+			color: #FFF;
+
+			h2 {
+				margin: 0;
+				height: 50px;
+				font-family: @font-primary;
+				font-size: 19px;
+				font-weight: normal;
+				line-height: 50px;
+			}
+
+			&.Entera {
+				color: @color-grasa-1;
+				padding-left: 50px;
+				background: transparent url("../img/icon-grasa.png") no-repeat 10px center;
+				background-size: auto 34px;
+			}
+			&.semidescremada {
+				color: @color-semidescremada-1;
+				padding-left: 50px;
+				background: transparent url("../img/icon-descremada.png") no-repeat 10px center;
+				background-size: auto 34px;
+			}
+			&.cero-grasa,
+			&.digestive {
+				color: @color-digestive-1;
+				padding-left: 50px;
+				background: transparent url("../img/icon-digestive.png") no-repeat 10px center;
+				background-size: auto 34px;
+			}
+		}
+
+		.banner-article {
+			overflow: hidden;
+		}
+		.date {
+			height: 40px;
+			color: #FFF;
+
+			margin: 0;
+			font-family: @font-primary;
+			font-size: 19px;
+			font-weight: 300;
+			line-height: 40px;
+			padding: 0 20px;
+			text-align: right;
+
+			&.Entera {
+				background-color: @color-grasa-1;
+			}
+			&.semidescremada {
+				background-color: @color-semidescremada-1;
+			}
+			&.cero-grasa,
+			&.digestive {
+				background-color: @color-digestive-1;
+			}
+		}
+
+		.share {
+			font-family: @font-primary;
+			font-size: 19px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+		h3 {
+			font-family: @font-primary;
+			margin: 0;
+			font-size: 21px;
+			font-weight: 300;
+		}
+	}
+}

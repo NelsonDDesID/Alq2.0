@@ -360,6 +360,15 @@
 				$newRadio.toggleClass('checked', !!$(radio).attr('checked'));
 			});
 
+			/*
+			var $checks = $('form.webform-client-form input[type="checkbox"]');
+			$checks.each(function(index, check){
+				var $check = $(check);
+				$check.addClass('required');
+				$check.attr('required', 'required');
+			});
+			*/
+
 			var errorMessage = $('.messages.error');
 			if( errorMessage.length > 0 ) {
 
@@ -379,6 +388,7 @@
 					});
 				});
 			}
+
 		}
 	})();
 });

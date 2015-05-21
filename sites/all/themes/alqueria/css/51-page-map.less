@@ -7,26 +7,23 @@ body.map-alqueria {
 	
 	#results {
 		position: absolute;
-		left: 400px;
-		top: 150px;
+		left: 10%;
+		top: 0;
 		width: 850px;
 		padding: 0;
 		z-index: 5;
-		border: 1px solid #9fcfef;
-		background: #f2f2f2;
-		display: none;
 
 		.left {
 			float: left;
 			width: 280px;
-
 			font-family: @font-secondary;
 			color: #515654;
 			font-size: 18px;
+			border: 1px solid #9fcfef;
+			background: #f2f2f2;
 
 			.text {
 				margin: 30px 44px 20px 44px;
-
 				b {
 					color: #93cbf1;
 					font-weight: 600;
@@ -50,8 +47,10 @@ body.map-alqueria {
 		}
 		.right {
 			float: right;
-			width: 565px;
-			border-left: 1px solid #9fcfef;
+			width: 570px;
+			border: 1px solid #9fcfef;
+			background: #f2f2f2;
+
 			.title {
 				padding: 5px 40px;
 				background: #8fc9f1 url("../img/map-title-back.png") no-repeat 5px center;
@@ -66,14 +65,13 @@ body.map-alqueria {
 			}
 			#places {
 				margin: 20px;
-				height: 250px;
+				height: 282px;
 				overflow: auto;
 
 				h3 {
 					font-family: @font-primary;
 					color: #515654;
 					font-size: 19px;
-
 					margin: 0;
 					font-weight: 300;
 					text-transform: uppercase;
