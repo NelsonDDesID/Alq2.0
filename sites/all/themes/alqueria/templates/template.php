@@ -4,6 +4,10 @@
 		if ($vars['view']->name == 'article') {
 			$theme_path = drupal_get_path('theme', 'alqueria');
 			drupal_add_js($theme_path . '/js/plugins/masonry.js');
+			drupal_add_js($theme_path . '/js/masonry-remove.js');
+			drupal_add_js($theme_path . '/js/plugins/AnimOnScroll.js');
 		}
 	}
+
+
 

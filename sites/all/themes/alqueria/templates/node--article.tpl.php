@@ -86,6 +86,7 @@
   $result           = null;
   $taxonomyTermName = null;
   $field_image      = null;
+  $field_image_logo      = null;
   $field_created    = null;
 
   $result           = field_view_field('node', $node, 'field_tags', array('default'));
@@ -93,7 +94,7 @@
   
   if(!empty($taxonomyTermName)){
     print '<div class="category ' . $taxonomyTermName . '"><h2>' .
-          ( $taxonomyTermName == 'Entera' ? 'Salud' : ( $taxonomyTermName == 'semidescremada' ? 'Vida Saludable' : 'Alimentaci&oacute;n' ) ) .
+          ( $taxonomyTermName == 'Entera' ? 'Bienestar' : ( $taxonomyTermName == 'semidescremada' ? 'Estilo de Vida' : 'Alimentaci&oacute;n' ) ) .
           '</h2></div>';
   }
 
@@ -107,6 +108,10 @@
   if(!empty($result['#object']->field_image)){
     $field_image      = file_create_url($result['#object']->field_image['und'][0]['uri']);
     print '<div class="image"><img src="'.$field_image.'"></div>';
+  }
+
+  if(!empty($result['#object']->field_image_logo)){
+    $field_image_logo      = file_create_url($result['#object']->field_image_logo['und'][0]['uri']);
   }
 
   if(!empty($result['#object']->created)){
@@ -153,24 +158,28 @@
 
     print '<div class="date ' . $taxonomyTermName . '">'.$monthTxt.' '.date("d/Y", $result['#object']->created).'</div>';
   }
+
+	$base_url = 'http://www.alqueriaportubienestar.com/';
+	$path = '';
 ?>
 </div>
-  <div class="content"<?php print $content_attributes; ?>>
+  <div class="content" <?php print $content_attributes; ?>>
     <div class="share">
-      COMP&Aacute;RTELO
-      <a href="https://www.facebook.com/dialog/feed?app_id=149377435120323&amp;display=popup&amp;redirect_uri=[base_url][path]&amp;link=[base_url][path]&amp;caption=[title]&amp;picture=[php_1]" class="btn-facebook" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-fb.png" /></a>
-      <a href="http://m.facebook.com/dialog/feed?app_id=149377435120323&amp;display=touch&amp;redirect_uri=[base_url][path]&amp;link=[base_url][path]&amp;picture=[php_1]" class="btn-facebook mobile" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-fb.png" /></a>
-      <a href="https://twitter.com/intent/tweet?url=[base_url][path]&amp;text=[title]&amp;via=LecheAlqueria" class="btn-twitter both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-tw.png" /></a>
-      <a href="https://plus.google.com/share?url=[base_url][path]" class="btn-gplus both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-gp.png" /></a>
-      <a href="mailto:?subject=[title]&amp;body=[base_url][path]" class="btn-email both" data-postname="[title]"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-em.png" /></a>
-      <a href="whatsapp://send?text=[base_url][path]" class="btn-whatsapp mobile" data-postname="[title]"  data-action="share/whatsapp/share"><img src="[base_url]/sites/all/themes/alqueria/img/share-tip-wa.png" /></a>
+      <span>COMP&Aacute;RTELO</span>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Facebook')" href="https://www.facebook.com/dialog/feed?app_id=406778042835232&amp;display=popup&amp;redirect_uri=<?php echo $base_url ?><?php echo $path ?>&amp;link=<?php echo $base_url ?><?php echo $path ?>&amp;caption=<?php echo $title ?>&amp;picture=<?php echo $field_image_logo ?>" class="btn-facebook" data-postname="<?php echo $title ?>"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-fb-b.png" /></a>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Facebook')" href="http://m.facebook.com/dialog/feed?app_id=406778042835232&amp;display=touch&amp;redirect_uri=<?php echo $base_url ?><?php echo $path ?>&amp;link=<?php echo $base_url ?><?php echo $path ?>&amp;picture=<?php echo $field_image_logo ?>" class="btn-facebook mobile" data-postname="<?php echo $title ?>"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-fb-b.png" /></a>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Twitter')" href="https://twitter.com/intent/tweet?url=<?php echo $base_url ?><?php echo $path ?>&amp;text=<?php echo $title ?>&amp;via=LecheAlqueria" class="btn-twitter both" data-postname="<?php echo $title ?>"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-tw-b.png" /></a>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Google')" href="https://plus.google.com/share?url=<?php echo $base_url ?><?php echo $path ?>" class="btn-gplus both" data-postname="<?php echo $title ?>"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-gp-b.png" /></a>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Mail')" href="mailto:?subject=<?php echo $title ?>&amp;body=<?php echo $base_url ?><?php echo $path ?>" class="btn-email both" data-postname="<?php echo $title ?>"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-em-b.png" /></a>
+      <a onclick="ga('send', 'event','Compartir','<?php echo $title ?>', 'Whatsapp')" href="whatsapp://send?text=<?php echo $base_url ?><?php echo $path ?>" class="btn-whatsapp mobile" data-postname="<?php echo $title ?>"  data-action="share/whatsapp/share"><img src="<?php echo $base_url ?>/sites/all/themes/alqueria/img/share-tip-wa-b.png" /></a>
     </div>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
+<?php
+
+  // We hide the comments and links now so that we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+  print render($content);
+?>
   </div>
 
   <?php //print render($content['links']); ?>

@@ -1,7 +1,7 @@
 
 
 // Categorías: Salud, Vida Saludable, Alimentación
-var health = 'Salud', life = 'Vida Saludable', food = 'Alimentación';
+var health = 'Bienestar', life = 'Estilo de Vida', food = 'Alimentación';
 var icons = {};
 icons[food] = 'sites/all/themes/alqueria/img/icon-gps-lifestyle.png';
 icons[health] = 'sites/all/themes/alqueria/img/icon-gps-health.png';
@@ -72,358 +72,275 @@ var centerLatLng	= new google.maps.LatLng(4.6493808,-74.0691929);
 var mapOptions = {
 	zoom: 14,
 	center: centerLatLng,
-	styles: styleMap
+	styles: styleMap,
+	streetViewControl: false
 };
 
 // Lugares
 var places = [
 	{
 		category: health,
+		title: 'Desafío de Guerreros',
+		subtitle: '',
+		content: 'Una emocionante carrera de obstáculos en la que los participantes podrán poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinámica',
+		town: 'Medellín',
+		address: '',
+		cost: '$65.000',
+		date: 'Julio 26 de 2015',
+		times: '9:00 a.m',
+		latlog: new google.maps.LatLng()
+	},
+	{
+		category: life,
+		title: 'Maratón de las flores',
+		subtitle: '',
+		content: 'Corre sin límites',
+		town: 'Medellín',
+		address: 'Edificio Inteligente Epm',
+		cost: 'Desde $35.000',
+		date: 'Septiembre 13 de 2015',
+		times: '',
+		latlog: new google.maps.LatLng(6.245364, -75.577787)
+	},
+	{
+		category: health,
 		title: '10K Bodytech',
-		subtitle: '10K Bodytech',
+		subtitle: '',
 		content: 'Una carrera que unirá a todos los corredores de Colombia por una buena causa. ',
 		town: 'Medellín',
-		address: '#####',
-		cost: '####',
+		address: '',
+		cost: '',
 		date: 'Agosto 12 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng( )
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Carrera Atlética de la Mujer',
-		subtitle: 'Carrera Atlética de la Mujer',
-		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina.  Más información <a href="http://www.carreradelamujercolombia.com/MED/" title="Carrera Atlética de la Mujer">clic aquí</a>',
+		subtitle: '',
+		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina.  Más información <a target="_blank" href="http://www.carreradelamujercolombia.com/MED/" title="Carrera Atlética de la Mujer">clic aquí</a>',
 		town: 'Medellín',
-		address: '#####',
+		address: 'Parque de los pies descalzos',
 		cost: 'En segunda etapa $ 46.000 individual / $ 92.000 para parejas / $ 42.000 para mamás y bebés',
 		date: 'Julio 12 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(6.245072, -75.577065)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Nike 10K She Runs',
-		subtitle: 'Nike 10K She Runs',
-		content: 'Una carrera especial para que todas las mujeres paisas se unan entorno al deporte y a todas las cosas positivas que este le aporta a sus vidas. Más información <a href="http://www.antena2.com.co/noticias/nike-presenta-por-primera-vez-la-carrera-she-81837" title="Nike 10K She Runs">clic aquí</a>',
+		subtitle: '',
+		content: 'Una carrera especial para que todas las mujeres paisas se unan entorno al deporte y a todas las cosas positivas que este le aporta a sus vidas. Más información <a target="_blank" href="http://www.antena2.com.co/noticias/nike-presenta-por-primera-vez-la-carrera-she-81837" target="blank" title="Nike 10K She Runs">clic aquí</a>',
 		town: 'Medellín',
-		address: '#####',
-		cost: '35.000',
+		address: 'Centro comercial el tesoro',
+		cost: '$35.000',
 		date: 'Junio 7 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(3.450088, -76.530580)
 	},
 	{
 		category: health,
 		title: '10k de la luz',
-		subtitle: '10k de la luz',
-		content: 'Una carrera para que todos los caleños disfruten de su ciudad mientras se ejercitan y se ponen a prueba. Más información <a href="http://www.juanchocorrelon.com/10k-de-la-luz" title="10k de la luz">clic aquí</a>',
+		subtitle: '',
+		content: 'Una carrera para que todos los caleños disfruten de su ciudad mientras se ejercitan y se ponen a prueba. Más información <a target="_blank" href="http://www.juanchocorrelon.com/10k-de-la-luz" target="blank" title="10k de la luz">clic aquí</a>',
 		town: 'Cali',
-		address: '#####',
-		cost: '#####',
+		address: 'Centro Comercial Centenario',
+		cost: '',
 		date: 'Octubre 18 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(3.454088, -76.537205)
 	},
 	{
 		category: health,
 		title: 'Epic Farallones',
-		subtitle: 'Epic Farallones',
-		content: 'Es una emocionante carrera en la que los deportistas podrán medir sus capacidades mientras aprecian el hermoso paisaje natural de los Farallones. Más información <a href="http://www.juanchocorrelon.com/trail/index.php/epic-farallones" title="Epic Farallones">clic aquí</a>',
-		town: 'Cali',
-		address: '#####',
-		cost: '80.000',
+		subtitle: '',
+		content: 'Es una emocionante carrera en la que los deportistas podrán medir sus capacidades mientras aprecian el hermoso paisaje natural de los Farallones. Más información <a target="_blank" href="http://www.juanchocorrelon.com/trail/index.php/epic-farallones" target="blank" title="Epic Farallones">clic aquí</a>',
+		town: '',
+		address: 'Lago Calima',
+		cost: '$80.000',
 		date: 'Septiembre 13 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(3.931399, -76.485584)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Maratón Latina',
 		subtitle: 'Maratón Latina',
-		content: 'Una maratón especial para que los amantes del deporte puedan practicarlo y disfrutar los hermosos paisajes que rodean el lago Calima. Más información <a href="http://desafiodeguerreros.com/desafio-urbano/" title="Maratón Latina">clic aquí</a>',
-		town: 'Cali',
-		address: '#####',
+		content: 'Una maratón especial para que los amantes del deporte puedan practicarlo y disfrutar los hermosos paisajes que rodean el lago Calima. Más información <a target="_blank" href="http://desafiodeguerreros.com/desafio-urbano/" target="blank" title="Maratón Latina">clic aquí</a>',
+		town: '',
+		address: 'Plaza Principal del Darien',
 		cost: '70.000',
 		date: 'Agosto 2 de 2015',
 		times: '7:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(3.929854, -76.485492)
 	},
 	{
 		category: health,
 		title: 'Desafío de Guerreros urbano',
-		subtitle: 'Desafío de Guerreros urbano',
-		content: 'Una emocionante carrera de obstáculos en la que los participantes podrán poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinámica. Más información <a href="http://desafiodeguerreros.com/desafio-urbano/" title="Desafío de Guerreros urbano">clic aquí</a>',
+		subtitle: '',
+		content: 'Una emocionante carrera de obstáculos en la que los participantes podrán poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinámica. Más información <a target="_blank" href="http://desafiodeguerreros.com/desafio-urbano/" target="blank" title="Desafío de Guerreros urbano">clic aquí</a>',
 		town: 'Cali',
-		address: '#####',
-		cost: '70.000 (el valor sube según la etapa)',
+		address: 'Centro Administrativo Municipal',
+		cost: '$70.000 (el valor sube según la etapa)',
 		date: 'Julio 12 de 2015',
 		times: '9:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(3.454167, -76.534193)
 	},
 	{
-		category: health,
+		category: life,
 		title: 'Media Maratón de Cali',
-		subtitle: 'Media Maratón de Cali',
-		content: 'Un evento que reunirá a corredores expertos y novatos alrededor de un solo sentimiento: el amor por el deporte y la ciudad. Más información <a href="http://www.juanchocorrelon.com/inscripciones-media-maraton-cali" title="Media Maratón de Cali">clic aquí</a>',
+		subtitle: '',
+		content: 'Un evento que reunirá a corredores expertos y novatos alrededor de un solo sentimiento: el amor por el deporte y la ciudad. Más información <a target="_blank" href="http://www.juanchocorrelon.com/inscripciones-media-maraton-cali" target="blank" title="Media Maratón de Cali">clic aquí</a>',
 		town: 'Cali',
-		address: '#####',
-		cost: '50.000',
+		address: 'Canchas Panamericanas',
+		cost: '$50.000',
 		date: 'Junio 7 de 2015',
 		times: '7:30 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(3.422548, -76.538134)
 	},
 	{
-		category: health,
+		category: life,
 		title: 'Pacific Trail',
-		subtitle: 'Pacific Trail',
-		content: 'Una carrera especial para que todos los caleños amantes del atletismo salgan a las calles de su ciudad a medir sus capacidades. Más información <a href="http://www.pacificrace.co/" title="Pacific Trail">clic aquí</a>',
+		subtitle: '',
+		content: 'Una carrera especial para que todos los caleños amantes del atletismo salgan a las calles de su ciudad a medir sus capacidades. Más información <a target="_blank" href="http://www.pacificrace.co/" target="blank" title="Pacific Trail">clic aquí</a>',
 		town: 'Cali',
-		address: '#####',
-		cost: '####',
+		address: 'Instituto Departamental de Bellas Artes',
+		cost: '',
 		date: 'Mayo 17 de 2015',
-		times: '####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(3.452903, -76.536302)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Carrera Atlética de la mujer',
-		subtitle: 'Carrera Atlética de la mujer',
-		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina. Más información <a href="http://www.carreradelamujercolombia.com/CAL/" title="Carrera Atlética de la mujer">clic aquí</a>',
+		subtitle: '',
+		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina. Más información <a target="_blank" href="http://www.carreradelamujercolombia.com/CAL/" target="blank" title="Carrera Atlética de la mujer">clic aquí</a>',
 		town: 'Cali',
-		address: '#####',
+		address: 'Canchas Panamericanas',
 		cost: 'En quinta etapa $ 70.000 individual / $140.000 para parejas / $55.000 para mamás y bebés',
 		date: 'Mayo 10 de 2015',
-		times: '####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(3.422548, -76.538135)
 	},
 	{
 		category: health,
 		title: 'Carrera Ascenso Torre Colpatria',
-		subtitle: 'Carrera Ascenso Torre Colpatria',
-		content: 'Ha sido catalogada como una de las mejores carreras de ascenso vertical del mundo, ideal para los deportistas más extremos. Más información <a href="http://www.correcaminoscolombia.com/Colpatria.shtml" title="Carrera Ascenso Torre Colpatria">clic aquí</a>',
+		subtitle: '',
+		content: 'Ha sido catalogada como una de las mejores carreras de ascenso vertical del mundo, ideal para los deportistas más extremos. Más información <a target="_blank" href="http://www.correcaminoscolombia.com/Colpatria.shtml" target="blank" title="Carrera Ascenso Torre Colpatria">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '####',
+		address: 'Torre Colpatria',
+		cost: '',
 		date: 'Diciembre 8 de 2015',
 		times: '7:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.610005, -74.070325)
 	},
 	{
 		category: health,
 		title: 'Excellent Series 15K',
-		subtitle: 'Excellent Series 15K',
-		content: 'Una carrera especial para los que aman correr sin ponerse límites. Más información <a href="http://www.newbalance.com.co/fit/excellent-series-15k-bogota" title="Excellent Series 15K">clic aquí</a>',
+		subtitle: '',
+		content: 'Una carrera especial para los que aman correr sin ponerse límites. Más información <a target="_blank" href="http://www.newbalance.com.co/fit/excellent-series-15k-bogota" target="blank" title="Excellent Series 15K">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '####',
+		address: 'Parqueadero Salite Mágico',
+		cost: '',
 		date: 'Noviembre 29 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(4.670085, -74.089810)
 	},
 	{
-		category: health,
+		category: life,
 		title: 'Carrera Cartoon Network',
-		subtitle: 'Carrera Cartoon Network',
+		subtitle: '',
 		content: 'Una carrera muy especial en la que todos los padres de familia podrán disfrutar del deporte junto a sus hijos pequeños y enseñarles valores como la tenacidad y el esfuerzo.',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '######',
+		address: 'Parque Simon Bolívar',
+		cost: '',
 		date: 'Noviembre 22 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(4.660672, -74.090786)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Carrera Atlética de la Mujer',
-		subtitle: 'Carrera Atlética de la Mujer',
-		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina. Más información <a href="http://www.carreradelamujercolombia.com/BOG/" title="Carrera Atlética de la Mujer">clic aquí</a>',
+		subtitle: '',
+		content: 'Esta es la oportunidad esperada por todas las mujeres deportistas para reunirse y demostrar toda su fortaleza, decisión y disciplina. Más información <a target="_blank" href="http://www.carreradelamujercolombia.com/BOG/" target="blank" title="Carrera Atlética de la Mujer">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
+		address: 'Parque Simon Bolívar',
 		cost: 'En segunda etapa $ 75.000 individual / $150.000 para parejas / $55.000 para mamás y bebés',
 		date: 'Septiembre 20 de 2015',
-		times: '#####',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		times: '',
+		latlog: new google.maps.LatLng(4.660672, -74.090786)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Carrera Atlética Fundación Club El Nogal',
-		subtitle: 'Carrera Atlética Fundación Club El Nogal',
-		content: 'En esta carrera los deportistas no solo podrán ejercitarse, sino también hacerle honor a las víctimas del atentado terrorista al club, por medio del deporte y la vida sana. Más información <a href="http://www.10kmas1fundacionelnogal.com/" title="Carrera Atlética Fundación Club El Nogal">clic aquí</a>',
+		subtitle: '',
+		content: 'En esta carrera los deportistas no solo podrán ejercitarse, sino también hacerle honor a las víctimas del atentado terrorista al club, por medio del deporte y la vida sana. Más información <a target="_blank" href="http://www.10kmas1fundacionelnogal.com/" target="blank" title="Carrera Atlética Fundación Club El Nogal">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '#####',
+		address: 'Av. Calle 72 entre carreras 11 y 13',
+		cost: '',
 		date: 'Septiembre 6 de 2015',
 		times: '07:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.658208, -74.059266)
 	},
 	{
 		category: health,
 		title: '12K Bodytech',
-		subtitle: '12K Bodytech',
-		content: 'Una carrera que unirá a todos los corredores de Colombia por una buena causa. Más información <a href="http://www.bodytech.com.co/colombia/noticias/10-bogota-suma-12-kilometros-a-los-100k-de-bodytech" title="12K Bodytech">clic aquí</a>',
+		subtitle: '',
+		content: 'Una carrera que unirá a todos los corredores de Colombia por una buena causa. Más información <a target="_blank" href="http://www.bodytech.com.co/colombia/noticias/10-bogota-suma-12-kilometros-a-los-100k-de-bodytech" target="blank" title="12K Bodytech">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '50.000 para afiliados al Bodytech y $ 55.000 para no afiliados',
+		address: 'Centro Comercial Gran Estación',
+		cost: '$50.000 para afiliados al Bodytech y $ 55.000 para no afiliados',
 		date: 'Agosto 23 de 2015',
 		times: '07:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.647916, -74.101959)
 	},
 	{
-		category: health,
+		category: life,
 		title: 'Media Maratón de Bogotá',
 		subtitle: 'Media Maratón de Bogotá',
-		content: 'Un evento que reunirá a corredores expertos y novatos alrededor de un solo sentimiento: el amor por el deporte y la ciudad. Más información <a href="http://www.mediamaratonbogota.com/2015/" title="Media Maratón de Bogotá">clic aquí</a>',
+		content: 'Un evento que reunirá a corredores expertos y novatos alrededor de un solo sentimiento: el amor por el deporte y la ciudad. Más información <a target="_blank" href="http://www.mediamaratonbogota.com/2015/" target="blank" title="Media Maratón de Bogotá">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '85.000 individual',
+		address: 'Parque Simon Bolívar',
+		cost: '$85.000 individual',
 		date: 'Julio 26 de 2015',
 		times: '09:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.660672, -74.090786)
 	},
 	{
-		category: health,
+		category: life,
 		title: 'Carrera atlética Allianz 15K',
-		subtitle: 'Carrera atlética Allianz 15K',
-		content: 'Una oportunidad perfecta para que los amantes de las carreras salgan a las calles de Bogotá a disfrutar este evento y a ejercitarse. Más información <a href="https://www.allianz.co/15k?gclid=CMfA56jnvMUCFRAwaQodDkQAUQ" title="Carrera atlética Allianz 15K">clic aquí</a>',
+		subtitle: '',
+		content: 'Una oportunidad perfecta para que los amantes de las carreras salgan a las calles de Bogotá a disfrutar este evento y a ejercitarse. Más información <a target="_blank" href="https://www.allianz.co/15k?gclid=CMfA56jnvMUCFRAwaQodDkQAUQ" target="blank" title="Carrera atlética Allianz 15K">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '40.000',
+		address: 'Parque Contador',
+		cost: '$40.000',
 		date: 'Mayo 31 de 2015',
 		times: '06:30 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.714584, -74.033086)
 	},
 	{
-		category: health,
+		category: food,
 		title: 'Acuatlón Distrital',
-		subtitle: 'Acuatlón Distrital',
-		content: 'Los mejores atletas del distrito podrán concursar en pruebas acuáticas para medir su resistencia y batir sus récords personales. Más información <a href="http://tribogota.com.co/index.php/eventos-y-resultados/icalrepeat.detail/2015/05/24/88/11/acuatlon-istrital" title="Acuatlón Distrital">clic aquí</a>',
+		subtitle: '',
+		content: 'Los mejores atletas del distrito podrán concursar en pruebas acuáticas para medir su resistencia y batir sus récords personales. Más información <a target="_blank" href="http://tribogota.com.co/index.php/eventos-y-resultados/icalrepeat.detail/2015/05/24/88/11/acuatlon-istrital" target="blank" title="Acuatlón Distrital">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
+		address: 'Calle 63 Nº 47 - 00',
 		cost: 'Gratuito',
 		date: 'Mayo 24 de 2015',
 		times: '07:00 a.m.',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
+		latlog: new google.maps.LatLng(4.655279, -74.083220)
 	},
 	{
 		category: health,
 		title: 'Desafío de Guerreros',
-		subtitle: 'Desafío de Guerreros',
-		content: 'Una emocionante carrera de obstáculos en la que los participantes podrán poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinámica. Más información <a href="http://desafiodeguerreros.com/" title="Desafío de Guerreros">clic aquí</a>',
+		subtitle: '',
+		content: 'Una emocionante carrera de obstáculos en la que los participantes podrán poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinámica. <a target="_blank" href="http://desafiodeguerreros.com/" target="blank" title="Desafío de Guerreros">clic aquí</a>',
 		town: 'Bogotá',
-		address: '#####',
-		cost: '105.000',
-		date: 'Mayo 23 y 24 de 2015',
-		times: 'Salidas de 9:00 a.m a 2:00 p.m. cada media hora',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
-	},
-	{
-		category: health,
-		title: 'Rompemontañas Monserrate',
-		subtitle: 'Rompemontañas Monserrate',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta diam interdum erat bibendum aliquet.Morbi eget augue dolor. Nulla id luctus ante, non aliquet lorem. Maecenas accumsan urna arcu, rutrum semper ex placerat et. Maecenas magna justo, blandit vitae congue in, eleifend a eros.',
-		town: 'Bogotá',
-		address: 'Avenida Circunvalar',
-		cost: '10.000 - 30.000',
-		date: 'Mayo 09/2015',
-		times: '9.00 am - 7.00 pm',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
-	},
-	{
-		category: health,
-		title: 'Rompemontañas Monserrate',
-		subtitle: 'Rompemontañas Monserrate',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta diam interdum erat bibendum aliquet.Morbi eget augue dolor. Nulla id luctus ante, non aliquet lorem. Maecenas accumsan urna arcu, rutrum semper ex placerat et. Maecenas magna justo, blandit vitae congue in, eleifend a eros.',
-		town: 'Bogotá',
-		address: 'Avenida Circunvalar',
-		cost: '10.000 - 30.000',
-		date: 'Mayo 09/2015',
-		times: '9.00 am - 7.00 pm',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
-	},
-	{
-		category: health,
-		title: 'Rompemontañas Monserrate',
-		subtitle: 'Rompemontañas Monserrate',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta diam interdum erat bibendum aliquet.Morbi eget augue dolor. Nulla id luctus ante, non aliquet lorem. Maecenas accumsan urna arcu, rutrum semper ex placerat et. Maecenas magna justo, blandit vitae congue in, eleifend a eros.',
-		town: 'Bogotá',
-		address: 'Avenida Circunvalar',
-		cost: '10.000 - 30.000',
-		date: 'Mayo 09/2015',
-		times: '9.00 am - 7.00 pm',
-		latlog: new google.maps.LatLng(4.6854479, -74.0620073)
-	},
-	{
-		category: life,
-		title: 'Desafío de Guerreros',
-		subtitle: 'Desafío de Guerreros',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: 'Direccion',
-		cost: '',
+		address: 'Carrera 7 # 11-1',
+		cost: '$105.000 ',
 		date: 'Mayo 23-24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6539342, -74.071162)
-	},
-	{
-		category: life,
-		title: 'Desafío de Guerreros',
-		subtitle: 'Desafío de Guerreros',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: 'Direccion',
-		cost: '',
-		date: 'Mayo 23-24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6539342, -74.071162)
-	},
-	{
-		category: life,
-		title: 'Desafío de Guerreros',
-		subtitle: 'Desafío de Guerreros',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: 'Direccion',
-		cost: '',
-		date: 'Mayo 23-24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6539342, -74.071162)
-	},
-	{
-		category: food,
-		title: 'Aquatlón Distrital',
-		subtitle: 'Aquatlón Distrital',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: '',
-		cost: '',
-		date: 'Mayo 24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6560312, -74.0690356)
-	},
-	{
-		category: food,
-		title: 'Aquatlón Distrital',
-		subtitle: 'Aquatlón Distrital',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: '',
-		cost: '',
-		date: 'Mayo 24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6560312, -74.0690356)
-	},
-	{
-		category: food,
-		title: 'Aquatlón Distrital',
-		subtitle: 'Aquatlón Distrital',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		town: 'Bogotá',
-		address: '',
-		cost: '',
-		date: 'Mayo 24/2015',
-		times: '',
-		latlog: new google.maps.LatLng(4.6560312, -74.0690356)
+		times: 'salidas de 9:00 a.m a 2:00 p.m. cada media hora',
+		latlog: new google.maps.LatLng(4.598532, -74.075324)
 	}
 ];
 
@@ -460,12 +377,12 @@ function initialize( ) {
 								( !!point.subtitle ? '<h4 class="content-title">' + point.subtitle +'</h4>' : '' ) +
 								'<p>' + point.content + '</p>' +
 								'<div class="social-networks">' +
-									'<a href="https://www.facebook.com/dialog/feed?app_id=406778042835232&amp;display=popup&amp;redirect_uri=' + url + '&amp;link=' + url + '&amp;name=' + point.title + '&amp;caption=' + point.content + '&amp;picture=sites/all/themes/alqueria/img/600x315.png" class="btn-facebook" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-fb-b.png"></a>' +
-									'<a href="http://m.facebook.com/dialog/feed?app_id=406778042835232&amp;display=touch&amp;redirect_uri=' + url + '&amp;link=' + url + '&amp;name=' + point.title + '&amp;caption=' + point.content + '&amp;picture=sites/all/themes/alqueria/img/600x315.png" class="btn-facebook mobile" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-fb-b.png"></a>' +
-									'<a href="https://twitter.com/intent/tweet?url=' + url + '&amp;text=' + point.title + '&amp;via=LecheAlqueria" class="btn-twitter both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-tw-b.png"></a>' +
-									'<a href="https://plus.google.com/share?url=' + url + '" class="btn-gplus both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-gp-b.png"></a>' +
-									'<a href="mailto:?subject=' + point.title + '&amp;body=' + url + '" class="btn-email both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-em-b.png"></a>' +
-									'<a href="whatsapp://send?text=' + url + '" class="btn-whatsapp mobile" data-postname="' + point.title + '" data-action="share/whatsapp/share"><img src="sites/all/themes/alqueria/img/share-tip-wa-b.png"></a>' +
+									'<a target="top" href="https://www.facebook.com/dialog/feed?app_id=406778042835232&amp;display=popup&amp;redirect_uri=' + url + '&amp;link=' + url + '&amp;name=' + point.title + '&amp;caption=' + encodeURI( point.content ) + '&amp;picture=sites/all/themes/alqueria/img/600x315.png" class="btn-facebook" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-fb-b.png"></a>' +
+									'<a target="top" href="http://m.facebook.com/dialog/feed?app_id=406778042835232&amp;display=touch&amp;redirect_uri=' + url + '&amp;link=' + url + '&amp;name=' + point.title + '&amp;caption=' + encodeURI( point.content ) + '&amp;picture=sites/all/themes/alqueria/img/600x315.png" class="btn-facebook mobile" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-fb-b.png"></a>' +
+									'<a target="top" href="https://twitter.com/intent/tweet?url=' + url + '&amp;text=' + point.title + '&amp;via=LecheAlqueria" class="btn-twitter both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-tw-b.png"></a>' +
+									'<a target="top" href="https://plus.google.com/share?url=' + url + '" class="btn-gplus both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-gp-b.png"></a>' +
+									'<a target="top" href="mailto:?subject=' + point.title + '&amp;body=' + url + '" class="btn-email both" data-postname="' + point.title + '"><img src="sites/all/themes/alqueria/img/share-tip-em-b.png"></a>' +
+									'<a target="top" href="whatsapp://send?text=' + url + '" class="btn-whatsapp mobile" data-postname="' + point.title + '" data-action="share/whatsapp/share"><img src="sites/all/themes/alqueria/img/share-tip-wa-b.png"></a>' +
 								'</div>' +
 							'</div>' +
 							'<div class="right">' +

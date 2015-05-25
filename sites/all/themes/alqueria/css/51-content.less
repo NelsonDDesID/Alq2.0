@@ -76,6 +76,9 @@ body>.content {
 	}
 }
 
+body.page-home-bienestar>.content,
+body.page-home-estilo-de-vida>.content,
+body.page-home-alimentacion>.content,
 body.front>.content {
 	padding-top: 0;
 	.top {
@@ -91,34 +94,63 @@ body.front>.content {
 					margin: 0;
 					padding: 0;
 					height: 44px;
-					background-color: #515654;
 					float: left;
 					text-transform: uppercase;
+					background-color: #FFF;
+
 					a {
-						padding: 0 10px;
+						padding: 0 9px;
 						font-family: @font-primary;
 						font-size: 15px;
 						line-height: 44px;
 						color: #fff;
 						display: block;
 						text-decoration: none;
-						&#filter_Entera {
+						background-color: #515654;
+
+						.opacity(0.7);
+
+						&#filter_grasa {
 							padding-left: 50px;
 							background: @color-grasa-1 url("../img/icon-grasa.png") no-repeat 10px 5px;
 							background-size: auto 34px;
+							@media only screen and (max-width: @responsive-w-768) {
+								font-size: 1px;
+								text-indent: -9999px;
+								padding-left: 45px;
+							}
 						}
 						&#filter_semidescremada {
 							padding-left: 50px;
 							background: @color-semidescremada-1 url("../img/icon-descremada.png") no-repeat 10px 5px;
 							background-size: auto 34px;
+							@media only screen and (max-width: @responsive-w-768) {
+								font-size: 1px;
+								text-indent: -9999px;
+								padding-left: 45px;
+							}
 						}
 						&#filter_digestive {
 							padding-left: 50px;
 							background: @color-digestive-1 url("../img/icon-digestive.png") no-repeat 10px 5px;
 							background-size: auto 34px;
+							@media only screen and (max-width: @responsive-w-768) {
+								font-size: 1px;
+								text-indent: -9999px;
+								padding-left: 45px;
+							}
+						}
+						&.selected,
+						&:hover {
+							.opacity(1);
 						}
 					}
 				}
+
+				@media only screen and (max-width: @responsive-w-480) {
+					margin: 11px 0;
+				}
+
 			}
 		}
 	}
@@ -132,7 +164,7 @@ body.front>.content {
 					border: 2px solid #f1f1f1;
 					.container.master {
 						position: relative;
-						.Entera {
+						.cero-grasa {
 							background-color: @color-grasa-1;
 							.titulo {
 								background-color: @color-grasa-1;
@@ -150,7 +182,8 @@ body.front>.content {
 								background: transparent url("../img/icon-descremada.png") no-repeat center center;
 							}
 						}
-						.cero-grasa,
+						.Deslactosada,
+						.Entera,
 						.digestive {
 							background-color: @color-digestive-1;
 							.titulo {
@@ -217,6 +250,15 @@ body.front>.content {
 						}
 					}
 
+					@media only screen and (max-width: @responsive-w-800) {
+						width: 33%;
+					}
+					@media only screen and (max-width: @responsive-w-600) {
+						width: 50%;
+					}
+					@media only screen and (max-width: @responsive-w-480) {
+						width: 100%;
+					}
 				}
 			}
 		}

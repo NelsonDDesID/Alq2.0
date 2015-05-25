@@ -7,71 +7,110 @@
 		padding: 40px 60px;
 
 		.category {
-
 			color: #FFF;
 
 			h2 {
 				margin: 0;
-				height: 50px;
+				height: 34px;
 				font-family: @font-primary;
 				font-size: 19px;
 				font-weight: normal;
-				line-height: 50px;
+				line-height: 34px;
 			}
 
 			&.Entera {
 				color: @color-grasa-1;
 				padding-left: 50px;
-				background: transparent url("../img/icon-grasa.png") no-repeat 10px center;
-				background-size: auto 34px;
+				background: transparent url("../img/icon-gps-health.png") no-repeat left top;
 			}
 			&.semidescremada {
 				color: @color-semidescremada-1;
 				padding-left: 50px;
-				background: transparent url("../img/icon-descremada.png") no-repeat 10px center;
-				background-size: auto 34px;
+				background: transparent url("../img/icon-gps-lifestyle.png") no-repeat left top;
 			}
+			&.Deslactosada,
 			&.cero-grasa,
 			&.digestive {
 				color: @color-digestive-1;
 				padding-left: 50px;
-				background: transparent url("../img/icon-digestive.png") no-repeat 10px center;
-				background-size: auto 34px;
+				background: transparent url("../img/icon-gps-nutrition.png") no-repeat left top;
 			}
 		}
 
 		.banner-article {
 			overflow: hidden;
+			.image {
+				img  {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.date {
+				height: 40px;
+				color: #FFF;
+
+				margin: 0;
+				font-family: @font-primary;
+				font-size: 19px;
+				font-weight: 300;
+				line-height: 40px;
+				padding: 0 20px;
+				text-align: right;
+
+				&.Entera {
+					background-color: @color-grasa-1;
+				}
+				&.semidescremada {
+					background-color: @color-semidescremada-1;
+				}
+				&.Deslactosada,
+				&.cero-grasa,
+				&.digestive {
+					background-color: @color-digestive-1;
+				}
+			}
 		}
-		.date {
-			height: 40px;
-			color: #FFF;
 
-			margin: 0;
-			font-family: @font-primary;
-			font-size: 19px;
-			font-weight: 300;
-			line-height: 40px;
-			padding: 0 20px;
-			text-align: right;
+		.content {
+			padding: 20px;
 
-			&.Entera {
-				background-color: @color-grasa-1;
-			}
-			&.semidescremada {
-				background-color: @color-semidescremada-1;
-			}
-			&.cero-grasa,
-			&.digestive {
-				background-color: @color-digestive-1;
-			}
-		}
+			.share {
+				font-family: @font-primary;
+				font-size: 19px;
+				height: 80px;
+				line-height: 80px;
 
-		.share {
-			font-family: @font-primary;
-			font-size: 19px;
-			height: 50px;
-			line-height: 50px;
+				span {
+					@media only screen and (max-width: @responsive-w-480) {
+						display: none;
+					}
+				}
+				a {
+					margin: 0 3px;
+					@media only screen and (max-width: @responsive-w-480) {
+						margin: 0;
+					}
+				}
+				.mobile {
+					display: none;
+				}
+				@media only screen and (max-width: @responsive-w-800) {
+					a {
+						display: none;
+						&.both,
+						&.mobile {
+							display: inline;
+						}
+					}
+				}
+
+			}
+			@media only screen and (max-width: @responsive-w-800) {
+				padding: 5px;
+			}
+			@media only screen and (max-width: @responsive-w-480) {
+				padding: 0;
+			}
 		}
 
 		h3 {
@@ -79,6 +118,15 @@
 			margin: 0;
 			font-size: 21px;
 			font-weight: 300;
+			padding: 10px 0;
+		}
+
+		@media only screen and (max-width: @responsive-w-800) {
+			padding: 20px 20px;
+		}
+
+		@media only screen and (max-width: @responsive-w-480) {
+			padding: 5px;
 		}
 	}
 }

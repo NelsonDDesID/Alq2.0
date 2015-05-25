@@ -28,6 +28,9 @@ body.map-alqueria {
 					color: #93cbf1;
 					font-weight: 600;
 				}
+				@media only screen and (max-width : @responsive-w-800) {
+					margin: 30px 24px 20px 24px;
+				}
 			}
 			.list {
 				margin: 0 44px 30px 44px;
@@ -43,6 +46,15 @@ body.map-alqueria {
 					font-weight: 300;
 					text-transform: uppercase;
 				}
+				@media only screen and (max-width : @responsive-w-800) {
+					margin: 0 24px 30px 24px;
+				}
+			}
+			@media only screen and (max-width : @responsive-w-800) {
+				width: 220px;
+			}
+			@media only screen and (max-width : @responsive-w-600) {
+				display: none !important;
 			}
 		}
 		.right {
@@ -94,9 +106,32 @@ body.map-alqueria {
 						&:hover {
 							text-decoration: underline;
 						}
+						@media only screen and (max-width : @responsive-w-480) {
+							margin-left: 20px;
+						}
+						@media only screen and (max-width : @responsive-w-320) {
+							margin-left: 5px;
+						}
 					}
 				}
 			}
+			@media only screen and (max-width : @responsive-w-800) {
+				width: 360px;
+			}
+			@media only screen and (max-width : @responsive-w-320) {
+				width: 240px;
+			}
+		}
+
+		@media only screen and (max-width : @responsive-w-800) {
+			width: 580px;
+		}
+		@media only screen and (max-width : @responsive-w-600) {
+			left: 15%;
+			width: 360px;
+		}
+		@media only screen and (max-width : @responsive-w-320) {
+			width: 240px;
 		}
 	}
 
@@ -129,11 +164,23 @@ body.map-alqueria {
 				p {
 					margin: 0;
 				}
+				a:hover,
+				a:visited,
+				a {
+					color: #7aa0bf;
+				}
+
 				.social-networks {
 					padding: 10px 0;
 					text-align: left;
 					a {
 						margin: 0 10px 0 0;
+						@media only screen and (max-width : @responsive-w-480) {
+							margin: 0;
+							img {
+								width: 30px;
+							}
+						}
 					}
 					.mobile {
 						display: none;
@@ -148,6 +195,9 @@ body.map-alqueria {
 						}
 					}
 				}
+				@media only screen and (max-width : @responsive-w-800) {
+					width: 100%;
+				}
 			}
 			.right {
 				width: 200px;
@@ -155,18 +205,18 @@ body.map-alqueria {
 				margin-left: 50px;
 
 				font-family: @font-secondary;
-				font-size: 17px;
-				line-height: 19px;
+				font-size: 15px;
+				line-height: 17px;
 				font-weight: 300;
 
 				&>div {
-					padding: 10px 0 5px 40px;
-					margin: 5px 0;
-					height: 38px;
+					padding: 5px 0 5px 40px;
+					margin: 0;
+					min-height: 38px;
 
 					&.location {
 						background: transparent url("../img/icon-gps.png") no-repeat left 10px;
-						height: 46px;
+						min-height: 46px;
 					}
 					&.cost {
 						background: transparent url("../img/icon-cost.png") no-repeat left 10px;
@@ -178,6 +228,12 @@ body.map-alqueria {
 						background: transparent url("../img/icon-time.png") no-repeat left 10px;
 					}
 
+				}
+				@media only screen and (max-width : @responsive-w-800) {
+					width: 100%;
+				}
+				@media only screen and (max-width : @responsive-w-480) {
+					margin-left: 5px;
 				}
 			}
 		}
