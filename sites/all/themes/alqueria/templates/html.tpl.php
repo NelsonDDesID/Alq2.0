@@ -66,19 +66,43 @@
   ga('send', 'pageview');
 
   var pathToTheme = '<?= $GLOBALS['base_path'] . path_to_theme() ?>';
-
-</script>
+  </script>
+  <script>(function() {
+      var _fbq = window._fbq || (window._fbq = []);
+      if (!_fbq.loaded) {
+        var fbds = document.createElement('script');
+        fbds.async = true;
+        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fbds, s);
+        _fbq.loaded = true;
+      }
+      _fbq.push(['addPixelId', '926731727352142']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+  </script>
+  <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=926731727352142&amp;ev=PixelInitialized" /></noscript>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 <!--[if lt IE 9]>
   <p class="browserupgrade">Estás usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualízalo</a> para mejorar tu experiencia.</p>
 <![endif]-->
-<!-- Add your site or application content here -->
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 991040960;
+    var google_conversion_label = "m0iNCNPT2lwQwKvI2AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991040960/?value=1.00&amp;currency_code=COP&amp;label=m0iNCNPT2lwQwKvI2AM&amp;guid=ON&amp;script=0"/></div></noscript>
 </body>
 </html>

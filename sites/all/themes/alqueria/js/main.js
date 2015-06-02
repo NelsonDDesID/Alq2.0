@@ -21,7 +21,6 @@
 	}
 }());
 
-
 ($ || jQuery)(function(){
 	var $ = $ || jQuery;
 
@@ -123,7 +122,6 @@
 				if( newHeight != toHideActualHeight ) {
 					toHideActualHeight = newHeight;
 					$toHide.height(toHideActualHeight);
-					console.debug('Listo:',toHideActualHeight);
 				}
 			}
 			else {
@@ -182,6 +180,7 @@
 	})();
 
 	// Home 1.1 productos
+	/*
 	(function(){
 		var $containers = $('body>.content .middle .landing .container:not(.last)');
 		if( $containers.length > 0 ) {
@@ -212,6 +211,7 @@
 
 		}
 	})();
+	*/
 
 	// Tag Site
 	(function(){
@@ -249,6 +249,22 @@
 			var $itemValue	= $(this).attr('href');
 			ga('send', 'event','Productos', 'Select_product', $itemValue);
 		});
+		//Artículos Home
+		var $articles = $('#block-views-article-block .views-row .views-field .field-content a');
+		if( $articles.length > 0 ) {
+			$articles.click(function(){
+				var $elem = $(this);
+				ga('send', 'pageview', {
+					'page': $elem.prop('href'),
+					'title': $elem.find('.titulo:first').text()
+				});
+			});
+		}
+
+		$('#block-menu-menu-categoria a').click(function(){
+			ga('send', 'event','Home', 'categoría', $(this).text());
+		});
+
 
 		//Social Network
 		$('.social.networks a').click(function(event) {
@@ -360,15 +376,6 @@
 				$newRadio.toggleClass('checked', !!$(radio).attr('checked'));
 			});
 
-			/*
-			var $checks = $('form.webform-client-form input[type="checkbox"]');
-			$checks.each(function(index, check){
-				var $check = $(check);
-				$check.addClass('required');
-				$check.attr('required', 'required');
-			});
-			*/
-
 			var errorMessage = $('.messages.error');
 			if( errorMessage.length > 0 ) {
 
@@ -388,6 +395,31 @@
 					});
 				});
 			}
+
+			$('#edit-submitted-first-name, #edit-submitted-last-name').keyup(function( event ){
+				var $input = $(this);
+				var filtered_text = $input.val().replace(/([^a-z áéíóúàèìòùâêîôûäëïöüñ]+)/gi, '');
+				if( $input.val( ) != filtered_text )
+					$input.val( filtered_text );
+			});
+
+			$('#edit-submitted-date-birthday-year').keyup(function( event ){
+				var $input = $(this);
+				var filtered_text = $input.val().replace(/([^0-9]+)/gi, '');
+				if( $input.val( ) != filtered_text )
+					$input.val( filtered_text );
+			});
+
+			$('#edit-submitted-doc-identidad').keyup(function( event ){
+				var $type = $('#edit-submitted-doc-type');
+				var $input = $(this);
+
+				if( $type.val() != 'CE' ) {
+					var filtered_text = $input.val().replace(/([^0-9]+)/gi, '');
+					if( $input.val( ) != filtered_text )
+						$input.val( filtered_text );
+				}
+			});
 
 		}
 	})();

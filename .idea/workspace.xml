@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36774c8d-1245-457b-9f0d-c59f666554bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-health.png" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-health.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-lifestyle.png" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-lifestyle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-nutrition.png" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/img/icon-gps-nutrition.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/10-base.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/10-base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-footer.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-footer.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/fapi_validation.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/fapi_validation.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/tests/fapi_validation.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/tests/fapi_validation_tests.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/fapi_validation/tests/fapi_validation_tests.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-loaded.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-loaded.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-page-map.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-page-map.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configMap.js" afterPath="$PROJECT_DIR$/configMap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.css" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map.html" afterPath="$PROJECT_DIR$/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/js/vendor/masonry-remove.js" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/js/vendor/masonry-remove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/node--article.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/node--article.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/template.php" afterPath="$PROJECT_DIR$/sites/all/themes/alqueria/templates/template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Alq2.0.iws" />
@@ -50,7 +43,7 @@
       <file leaf-file-name="node--article.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/node--article.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-59.615383">
+            <state vertical-scroll-proportion="0.0">
               <caret line="168" column="6" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
               <folding>
                 <element signature="e#7#4092#0#PHP" expanded="true" />
@@ -62,7 +55,7 @@
       <file leaf-file-name="51-content.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
+            <state vertical-scroll-proportion="0.0">
               <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
               <folding />
             </state>
@@ -72,18 +65,18 @@
       <file leaf-file-name="50-slideshow.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9035461">
-              <caret line="419" column="52" selection-start-line="419" selection-start-column="52" selection-end-line="419" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="407" column="76" selection-start-line="407" selection-start-column="76" selection-end-line="407" selection-end-column="76" />
               <folding>
                 <element signature="e#691#1085#0" expanded="false" />
                 <element signature="e#1121#1228#0" expanded="false" />
@@ -99,10 +92,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="html.tpl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30666667">
+              <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="40-body.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/40-body.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="30" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
               <folding />
             </state>
@@ -112,7 +115,7 @@
       <file leaf-file-name="50-footer.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-footer.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-47.076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
               <folding />
             </state>
@@ -122,7 +125,7 @@
       <file leaf-file-name="50-header.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.615385">
+            <state vertical-scroll-proportion="0.0">
               <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding />
             </state>
@@ -132,7 +135,7 @@
       <file leaf-file-name="51-registro.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
               <folding />
             </state>
@@ -142,7 +145,7 @@
       <file leaf-file-name="51-content-milks.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.807693">
+            <state vertical-scroll-proportion="0.0">
               <caret line="150" column="62" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
               <folding />
             </state>
@@ -185,6 +188,7 @@
         <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less" />
         <option value="$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less" />
         <option value="$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js" />
+        <option value="$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php" />
       </list>
     </option>
   </component>
@@ -262,8 +266,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,36 +395,6 @@
               <option name="myItemId" value="all" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alqueria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alq2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alq2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -488,24 +462,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2480091" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1888753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16609783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19376528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2480091" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16609783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -526,14 +500,76 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#691#1085#0" expanded="false" />
+            <element signature="e#1121#1228#0" expanded="false" />
+            <element signature="e#1263#2082#0" expanded="false" />
+            <element signature="e#2120#3722#0" expanded="false" />
+            <element signature="e#3752#4690#0" expanded="false" />
+            <element signature="e#4717#6917#0" expanded="false" />
+            <element signature="e#6949#8242#0" expanded="false" />
+            <element signature="e#8431#9217#0" expanded="false" />
+            <element signature="e#9298#9605#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/40-body.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-footer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="62" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,10 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
-          <folding>
-            <element signature="e#643#1254#0" expanded="false" />
-            <element signature="e#13976#17054#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="243" column="33" selection-start-line="241" selection-start-column="32" selection-end-line="243" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.307692">
           <caret line="246" column="11" selection-start-line="246" selection-start-column="11" selection-end-line="246" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.692307">
           <caret line="24" column="13" selection-start-line="6" selection-start-column="12" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.346154">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,9 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29868227">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
           <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="e#154#846#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.065721646">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,31 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.043814432">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4121212">
-          <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14424242">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="5" selection-start-line="48" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,13 +770,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
           <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content-milks.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.807693">
+        <state vertical-scroll-proportion="0.0">
           <caret line="150" column="62" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
           <folding />
         </state>
@@ -803,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/40-body.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
           <folding />
         </state>
@@ -811,7 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-slideshow.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding />
         </state>
@@ -819,7 +799,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-content.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
           <folding />
         </state>
@@ -829,10 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60249555">
           <caret line="346" column="24" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
-          <folding>
-            <element signature="e#643#1254#0" expanded="false" />
-            <element signature="e#1480#13211#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,15 +816,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.317757">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/node--article.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-59.615383">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="168" column="6" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
           <folding>
             <element signature="e#7#4092#0#PHP" expanded="true" />
@@ -858,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-footer.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-47.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
           <folding />
         </state>
@@ -866,7 +839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/50-header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.615385">
+        <state vertical-scroll-proportion="0.0">
           <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
@@ -879,22 +852,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19172932">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/css/51-registro.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1440678">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9035461">
-          <caret line="419" column="52" selection-start-line="419" selection-start-column="52" selection-end-line="419" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="407" column="76" selection-start-line="407" selection-start-column="76" selection-end-line="407" selection-end-column="76" />
           <folding>
             <element signature="e#691#1085#0" expanded="false" />
             <element signature="e#1121#1228#0" expanded="false" />
@@ -906,6 +892,14 @@
             <element signature="e#8431#9217#0" expanded="false" />
             <element signature="e#9298#9605#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/alqueria/templates/html.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30666667">
+          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

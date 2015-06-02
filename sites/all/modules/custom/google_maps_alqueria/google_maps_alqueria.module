@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implementation hook_menu().
+ */
+function google_maps_alqueria_menu() {
+	$items = array();
+	$items['api'] = array(
+		'title' => 'MapsConfig',
+		'page callback' => 'content_relation_get',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+	);
+	return $items;
+}
+
+function content_relation_get($term = '') {
+    $result = db_query("SELECT 
+							node.nid AS nid,
+							field_data_field_tags.field_tags_tid AS category, 
+							node.title AS title,
+							field_data_field_subtitle.field_subtitle_value AS subtitle,
+							field_data_body.body_value AS content,
+							field_data_field_town.field_town_value AS town,
+							field_data_field_address.field_address_value AS address,
+							field_data_field_cost.field_cost_value AS cost,
+							field_data_field_date.field_date_value AS date_string,
+							field_data_field_date.field_date_timezone AS date_timezone,
+							CONCAT('new google.maps.LatLng(',field_data_field_latitud.field_latitud_value, ',', field_data_field_longitud.field_longitud_value,')') AS latlog,
+							node.created AS node_created
+						FROM node
+						LEFT JOIN field_data_field_tags ON (field_data_field_tags.entity_id=node.nid AND field_data_field_tags.bundle='mapa' AND field_data_field_tags.entity_type='node')
+						LEFT JOIN field_data_field_subtitle ON (field_data_field_subtitle.entity_id=node.nid AND field_data_field_subtitle.bundle='mapa' AND field_data_field_subtitle.entity_type='node')
+						LEFT JOIN field_data_body ON (field_data_body.entity_id=node.nid AND field_data_body.bundle='mapa' AND field_data_body.entity_type='node')
+						LEFT JOIN field_data_field_town ON (field_data_field_town.entity_id=node.nid AND field_data_field_town.bundle='mapa' AND field_data_field_town.entity_type='node')
+						LEFT JOIN field_data_field_address ON (field_data_field_address.entity_id=node.nid AND field_data_field_address.bundle='mapa' AND field_data_field_address.entity_type='node')
+						LEFT JOIN field_data_field_cost ON (field_data_field_cost.entity_id=node.nid AND field_data_field_cost.bundle='mapa' AND field_data_field_cost.entity_type='node')
+						LEFT JOIN field_data_field_date ON (field_data_field_date.entity_id=node.nid AND field_data_field_date.bundle='mapa' AND field_data_field_date.entity_type='node')
+						LEFT JOIN field_data_field_latitud ON (field_data_field_latitud.entity_id=node.nid AND field_data_field_latitud.bundle='mapa' AND field_data_field_latitud.entity_type='node')
+						LEFT JOIN field_data_field_longitud ON (field_data_field_longitud.entity_id=node.nid AND field_data_field_longitud.bundle='mapa' AND field_data_field_longitud.entity_type='node')
+						WHERE (( (node.status = '1') AND (node.type IN  ('mapa')) ))
+						ORDER BY node_created DESC", array(":title" => $term.'%'))->fetchAll();
+	//$result 	= "[{category: health,title: 'DesafÃ­o de Guerreros - MedellÃ­n',subtitle: '',content: 'Una emocionante carrera de obstÃ¡culos en la que los participantes podrÃ¡n poner a prueba toda su resistencia y ejercitarse de una manera divertida y dinÃ¡mica',town: 'MedellÃ­n',address: '',cost: '$65.000',date: 'Julio 26 de 2015',times: '9:00 a.m',latlog: new google.maps.LatLng()},{category: life,title: 'MaratÃ³n de las flores - MedellÃ­n',subtitle: '',content: 'Corre sin lÃ­mites',town: 'MedellÃ­n',address: 'Edificio Inteligente Epm',cost: 'Desde $35.000',date: 'Septiembre 13 de 2015',times: '',latlog: new google.maps.LatLng(6.245364, -75.577787)}];";
+    drupal_json_output($result);
+    drupal_exit();
+}

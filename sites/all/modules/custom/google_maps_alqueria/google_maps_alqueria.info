@@ -1,0 +1,4 @@
+name = Google Maps Personalizado para Alquería
+description = Modulo Encargado de generar los markets para alqueria 2015
+core = 7.x
+package = Custom
